@@ -1,0 +1,3 @@
+## Improving our Approach
+
+When we scrutinize the content of our 28\*28 array, we can realize that our approach so far has not been clever. We have an entire row of 0s because the E character will never be before any character and an entire column of 0s because S will never be after any character. This makes us loose important place and, in fact, adds unecessary complications as our model pf bigram only ever requires one special character for both the end and the start of the string - the only time this may present a challenge is when there are no chracters in a word because the End and the Start are next to each other, but since it is the only case we can easily recognize it.
